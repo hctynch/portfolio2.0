@@ -1,3 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Source Code Pro;
+  src: url('/SourceCodePro.ttf')
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
