@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -67,4 +67,61 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@keyframes waterdrop-spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-width: 10px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+  }
+  15% {
+    border-top-width: 8px;
+    border-right-width: 4px;
+    border-bottom-width: 2px;
+    border-left-width: 6px;
+  }
+  30% {
+    border-top-width: 3px;
+    border-right-width: 10px;
+    border-bottom-width: 4px;
+    border-left-width: 2px;
+  }
+  45% {
+    border-top-width: 1px;
+    border-right-width: 6px;
+    border-bottom-width: 10px;
+    border-left-width: 3px;
+  }
+  60% {
+    border-top-width: 4px;
+    border-right-width: 2px;
+    border-bottom-width: 8px;
+    border-left-width: 10px;
+  }
+  75% {
+    border-top-width: 6px;
+    border-right-width: 1px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+  }
+  90% {
+    border-top-width: 10px;
+    border-right-width: 3px;
+    border-bottom-width: 2px;
+    border-left-width: 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-width: 10px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+  }
+}
+
+.animate-waterdrop {
+  animation: waterdrop-spin 8s ease-in-out infinite;
 }
