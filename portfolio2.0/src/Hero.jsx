@@ -15,7 +15,7 @@ function Hero() {
             src='centered_pic.jpeg'
             className='h-[150px] w-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] object-cover object-top rounded-full border-red-500'
           />
-          <div className='absolute inset-0 border-white/80 rounded-full h-[150px] w-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[250px] animate-waterdrop'></div>
+          <div className='absolute inset-0 border-white/80 rounded-full h-[150px] w-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] animate-waterdrop'></div>
         </div>
         <div className='flex flex-col text-start justify-center items-start w-55 sm:min-w-100 md:w-115 lg:w-170'>
           <p className='text-3xl md:text-5xl'>Hunt Tynch</p>
