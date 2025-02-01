@@ -8,7 +8,9 @@ import { FiMapPin } from 'react-icons/fi';
 import { GiWolfHowl } from 'react-icons/gi';
 function Hero() {
   return (
-    <div className='w-full flex flex-col items-center my-40 sm:my-75 text-white font-[Source_Code_Pro]'>
+    <div
+      className='w-full flex flex-col items-center mt-40 sm:mt-75 text-white font-[Source_Code_Pro]'
+      id='home'>
       <div className='flex justify-center items-center'>
         <div className='relative mx-3 sm:mx-10 md:mx-20'>
           <img
@@ -37,7 +39,7 @@ function Hero() {
       <div className='flex flex-row opacity-100 w-80 mt-4 md:mt-10 lg:w-150'>
         <a
           href='https://linkedin.com/in/hunt-tynch'
-          className='hover:scale-120  transform transition-transform duration-300'>
+          className='hover:animate-none hover:scale-120  transform transition-transform duration-300'>
           <AiFillLinkedin className='-ml-1 my-2 w-10 h-10 md:w-15 md:h-15 text-white hover:text-blue-500' />
         </a>
         <a
