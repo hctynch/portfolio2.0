@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: Source Code Pro;
-  src: url('/SourceCodePro.ttf')
+  font-family: "Source Code Pro";
+  src: url('/SourceCodePro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('/SourceCodePro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 #root {

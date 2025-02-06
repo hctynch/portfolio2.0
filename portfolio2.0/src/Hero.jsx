@@ -26,13 +26,13 @@ function Hero() {
             <p className='text-md md:text-2xl md:mt-1.75'>Edenton, NC</p>
           </div>
           <div>
-            <p className='text-lg md:text-xl lg:text-3xl mt-2'>
+            <span className='text-lg md:text-xl lg:text-3xl mt-2'>
               Software Engineer, graduating from{' '}
-              <div className='underline decoration-red-500 flex flex-col items-center sm:flex-row sm:items-center'>
+              <p className='underline decoration-red-500 flex flex-col items-center sm:flex-row sm:items-center'>
                 North Carolina State University
                 <GiWolfHowl className='sm:ml-3 text-red-800 bg-white rounded-full -mt-7 ml-15 h-8 w-8 sm:h-10 sm:w-10 sm:-mt-0 lg:h-15 lg:w-15' />
-              </div>
-            </p>
+              </p>
+            </span>
           </div>
         </div>
       </div>
@@ -58,6 +58,9 @@ function Hero() {
           <AiFillInstagram className='my-2 w-10 h-10 md:w-15 md:h-15 text-white hover:text-blue-500' />
         </a>
       </div>
+      <a className='mt-6 md:mt-20 md:-mb-20 bg-gradient-to-b from-red-500 to-black border border-white hover:border-gray-400 hover:from-gray-400 rounded-xl px-5 py-1.5' href='Hunt_Tynch_Resume.pdf' download>
+          <p className='text-white text-xl md:text-2xl'>Resume</p>
+      </a>
     </div>
   );
 }

@@ -2,6 +2,7 @@ const work = [
   {
     name: 'R&D Summer Employee',
     dates: 'May-July of 2023 & 2024',
+    company: 'Avoca LLC.',
     descrip: [
       'Worked in the R&D Department of Ashland’s specialty extraction division, Avoca LLC.',
       'Researched DNA sequencing of transgenic sage plants to achieve higher sclareol yields.',
@@ -31,11 +32,13 @@ function WorkSection() {
             className='relative w-full md:w-2/3 lg:w-2/5 border border-white/70 rounded-xl hover:border-red-500'>
             {/* Content that will blur on hover */}
             <div className='flex flex-col items-center p-4 transition duration-300 ease-in-out'>
-              <p className='text-white my-5 text-xl'>{item.name}</p>
+              <p className='text-white mt-5 text-xl'>{item.name}</p>
+              <p className='text-white/70 italic text-md'>{item.company}</p>
+              <p className='text-white/70 mb-5 italic text-md'>{item.dates}</p>
               {item.img && (
                 <img
                   src={item.img}
-                  className='w-[400px] sm:w-[500px] md:w-[600px]'
+                  className='w-[400px] sm:w-[500px] md:w-[600px] rounded-2xl'
                 />
               )}
               <ul className='flex flex-col items-center text-white text-center mt-10 list-disc list-inside'>

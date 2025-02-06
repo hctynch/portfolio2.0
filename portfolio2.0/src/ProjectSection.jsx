@@ -61,7 +61,7 @@ function ProjectSection() {
               {item.img && (
                 <img
                   src={item.img}
-                  className='w-[400px] sm:w-[700px] md:w-[900px]'
+                  className='w-[400px] sm:w-[700px] md:w-[900px] rounded-xl'
                 />
               )}
               <ul className='flex flex-col items-center text-white text-center mt-10 list-disc list-inside'>
