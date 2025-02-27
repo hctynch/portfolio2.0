@@ -2,6 +2,18 @@ import { GiClick } from 'react-icons/gi';
 
 const projects = [
   {
+    name: 'Audio Data Routing Model',
+    href: null,
+    stack: 'Python, MariaDB, Next.js, Docker',
+    descrip: [
+      'Sponsored by: Laboratory for Analytic Sciences (LAS) at NCSU.',
+      'Trained a machine learning model to route audio files to speech-to-text models depending on audio specific features.',
+      'Managed a multi-container environment using docker compose and deployed to an AWS Commander instance.',
+      'Collaborated with a 5-person Agile team using GitHub projects.'
+    ],
+    img: '',
+  },
+  {
     name: 'Portfolio2',
     href: 'https://github.com/hctynch/portfolio2.0',
     stack: 'React, TailwindCSS',
@@ -12,14 +24,14 @@ const projects = [
     img: 'portfolio2.png',
   },
   {
-    name: 'Foxhound Score Tracker',
-    href: 'https://github.com/hctynch/mastersgtp',
-    stack: 'Spring, React, MySql, Docker',
+    name: 'Trackhounds',
+    href: 'https://github.com/hctynch/trackhounds',
+    stack: 'Spring, React, MariaDB, Docker',
     descrip: [
-      'Created a full-stack score tracking system using Spring, React, MySql, and Docker.',
-      'Developed a REST API in Spring to handle scoring logic and storage in MySql.',
+      'Created a full-stack score tracking system for foxhounds using Spring, React, MariaDB, and Docker.',
+      'Developed a REST API in Spring to handle scoring logic and storage in MariaDB.',
       'Frontend is React based.',
-      'Dockerized database, backend, and frontend for easy deployment.',
+      'Dockerized full-stack environment for easy deployment.',
     ],
     img: '',
   },
@@ -53,7 +65,7 @@ function ProjectSection() {
             href={item.href}
             className='relative w-full md:w-2/3 lg:w-2/5 border border-white/70 rounded-xl hover:border-red-500'>
             {/* Content that will blur on hover */}
-            <div className='flex flex-col items-center p-4 transition duration-300 ease-in-out hover:blur-md'>
+            <div className={`flex flex-col items-center p-4 transition duration-300 ease-in-out ${item.href ? 'hover:blur-md' : ''}`}>
               <p className='text-white my-5 text-xl'>{item.name}</p>
               <p className='text-white text-sm mb-5 -mt-5'>
                 Stack: {[item.stack]}
@@ -76,13 +88,17 @@ function ProjectSection() {
             </div>
 
             {/* Hover message overlay */}
-            <p className='absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black/60 rounded-xl'>
-              Click to go to Repo
-            </p>
-            <p className='underline underline-offset-8 decoration-red-600 pb-10 sm:pb-0 flex items-center justify-center text-white text-lg font-semibold opacity-100 sm:opacity-0 sm:h-0 bg-black/60 rounded-xl'>
-              Click to go to Repo{' '}
-              <GiClick className='ml-4 h-8 w-8 animate-pulse' />
-            </p>
+            {item.href && (
+              <div>
+                  <p className='absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black/60 rounded-xl'>
+                    Click to go to Repo
+                  </p>
+                  <p className='underline underline-offset-8 decoration-red-600 pb-10 sm:pb-0 flex items-center justify-center text-white text-lg font-semibold opacity-100 sm:opacity-0 sm:h-0 bg-black/60 rounded-xl'>
+                    Click to go to Repo{' '}
+                    <GiClick className='ml-4 h-8 w-8 animate-pulse' />
+                  </p>
+              </div>
+            )}
           </a>
         ))}
       </div>
